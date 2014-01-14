@@ -56,5 +56,4 @@ Running `udevadm monitor --property` as root and dis/connecting an external
 monitor, udev events were shown.
 
 I created the file `/etc/udev/rules.d/99-monitor-hotplug.rules` and put the
-following in it:
-    ACTION=="change", SUBSYSTEM=="drm", ENV{HOTPLUG}=="1", RUN+="/path/to/monitor-hotplug.sh"
+following in it: `ACTION=="change", SUBSYSTEM=="drm", ENV{HOTPLUG}=="1", RUN+="/path/to/monitor-hotplug.sh"`
